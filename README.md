@@ -1,4 +1,15 @@
 # Sudoku SVG converter
+
+<!--toc:start-->
+- [Sudoku SVG converter](#sudoku-svg-converter)
+  - [Weight of SVG's](#weight-of-svgs)
+  - [Examples](#examples)
+    - [Generate through shell](#generate-through-shell)
+    - [Generate through code](#generate-through-code)
+  - [Customize](#customize)
+  - [To-do](#to-do)
+<!--toc:end-->
+
 Small Python library for converting Sudoku string to `.svg` files (**0** library dependencies, **1** `.svg` template required).
 
 ## Weight of SVG's
@@ -19,7 +30,7 @@ Here is how default template looks like:
 
 ![template.svg](template.svg)
 
-### Through shell:
+### Generate through shell
 
 ```sh
 python3 sudoku_svg.py .7.9....6..8.5.......6.3.9.....26.5.5.2...........8..1.....7..9.1....52...7...38.
@@ -29,7 +40,7 @@ Generates output.svg (in the same directory), which looks like this (with defaul
 
 ![output.svg](example_output.svg)
 
-### Through code:
+### Generate through code
 ```python3
 from sudoku_svg import SudokuSVG
 
